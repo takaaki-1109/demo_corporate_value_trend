@@ -33,7 +33,7 @@ st.write("""
 #### 複数銘柄を選択
 """)
 
-@st.cache_data
+@st.cache
 def get_data(days, tickers):
     horizonData = pd.DataFrame()
     for company in tickers.keys():
